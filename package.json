@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "dev": "python3 -m http.server 8000 --directory dist/client"
+    "dev": "python3 -m http.server 8000 --directory dist"
   }
 }

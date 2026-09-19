@@ -17,6 +17,4 @@ Open http://localhost:8000.
 
 The public site is hosted on GitHub Pages: https://pruthvirajksuresh.github.io/webstore/
 
-Every push to `main` runs `.github/workflows/pages.yml`, validates the catalog's inline JavaScript, builds `dist/client/index.html`, and deploys the static catalog to GitHub Pages. The workflow can also be run manually from the repository's Actions tab. No additional dependencies or deployment secrets are required.
-
-The original private Sites deployment remains available at https://medicine-catalog-pruthviraj.pkj0996.chatgpt.site. Its Worker and `.openai/hosting.json` are retained for that deployment; GitHub Pages serves only the static files in `dist/client`.
+Every push to `main` runs `.github/workflows/pages.yml`, validates the catalog's inline JavaScript, builds `dist/index.html`, and deploys the static catalog to GitHub Pages. The workflow can also be run manually from the repository's Actions tab. No additional dependencies or deployment secrets are required.
