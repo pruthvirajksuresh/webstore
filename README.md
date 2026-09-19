@@ -17,6 +17,6 @@ Open http://localhost:8000.
 
 The build validates the inline JavaScript and copies the catalog to `dist/client/index.html`. A small Cloudflare-compatible Worker in `dist/server/index.js` serves the static assets through the `ASSETS` binding.
 
-The site is hosted through Sites: https://medicine-catalog-pruthviraj.mythic-beech-3142.chatgpt.site
+The site is hosted through Sites: https://medicine-catalog-pruthviraj.pkj0996.chatgpt.site
 
 Hosting project metadata lives in `.openai/hosting.json`. Hosting credentials are never committed. Publishing an update requires building, pushing the source to Sites, saving a version, and deploying that version; GitHub pushes alone do not publish updates.
