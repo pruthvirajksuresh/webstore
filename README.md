@@ -15,8 +15,8 @@ Open http://localhost:8000.
 
 ## Hosting
 
-The build validates the inline JavaScript and copies the catalog to `dist/client/index.html`. A small Cloudflare-compatible Worker in `dist/server/index.js` serves the static assets through the `ASSETS` binding.
+The public site is hosted on GitHub Pages: https://pruthvirajksuresh.github.io/webstore/
 
-The site is hosted through Sites: https://medicine-catalog-pruthviraj.pkj0996.chatgpt.site
+Every push to `main` runs `.github/workflows/pages.yml`, validates the catalog's inline JavaScript, builds `dist/client/index.html`, and deploys the static catalog to GitHub Pages. The workflow can also be run manually from the repository's Actions tab. No additional dependencies or deployment secrets are required.
 
-Hosting project metadata lives in `.openai/hosting.json`. Hosting credentials are never committed. Publishing an update requires building, pushing the source to Sites, saving a version, and deploying that version; GitHub pushes alone do not publish updates.
+The original private Sites deployment remains available at https://medicine-catalog-pruthviraj.pkj0996.chatgpt.site. Its Worker and `.openai/hosting.json` are retained for that deployment; GitHub Pages serves only the static files in `dist/client`.
